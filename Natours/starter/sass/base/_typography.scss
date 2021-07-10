@@ -1,0 +1,21 @@
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+    &--main{
+        display: block;
+        font-size: 60px;
+        letter-spacing: 35px;
+        font-weight: 400;
+        animation: moveInLeft 1s ease-out;
+    }
+
+    &--sub{
+        display: block;
+        letter-spacing: 17px;
+        font-size: 20px;
+        font-weight: 700;
+        animation: moveInRight 1s ease-out;
+    }
+}
