@@ -1,6 +1,5 @@
 .row{
     max-width: 114rem;
-    background-color: $color-gray-100;
     margin: 0 auto;
 
     &:not(:last-child){
@@ -10,7 +9,6 @@
     @include clearfix;
 
     [class ^= 'col-']{
-        background-color: $color-light-green;
         float: left;
 
         &:not(:last-child){
