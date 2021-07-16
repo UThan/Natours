@@ -726,6 +726,63 @@ body {
   border-radius: 50%;
 }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+}
+
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.footer__logo {
+  width: 15rem;
+  height: auto;
+}
+
+.footer__navigation {
+  border-top: 1px solid #999;
+  padding-top: 2rem;
+  display: inline-block;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__item:not(:last-child) {
+  padding-right: 1rem;
+}
+
+.footer__link, .footer__link:link, .footer__link:active {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f7f7f7;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.footer__link:hover, .footer__link:active {
+  color: #55c57a;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.footer__copyright {
+  width: 80%;
+  border-top: 1px solid #999;
+  padding-top: 2rem;
+  color: #f7f7f7;
+  font-weight: 300;
+  float: right;
+}
+
 .header {
   position: relative;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
