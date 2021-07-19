@@ -8,7 +8,12 @@
     background-color: rgba($color-black,.8);
     opacity: 0;
     visibility: hidden;
+    backdrop-filter: blur(10px);
     
+    @supports (backdrop-filter: blur(0)) or (-webkit-backdrop-filter: blur(0)){
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black,.3);
+    }
 
     &:target{
         visibility: visible;

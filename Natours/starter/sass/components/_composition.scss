@@ -1,5 +1,6 @@
 .composition{
-    position: relative;    
+    position: relative;  
+    margin: 0 auto;
 
     &__photo{
         position: absolute;
@@ -28,10 +29,21 @@
             transform: scale(1.05) translateY(-5px);
             outline: 1.5rem solid $color-medium-green;
             box-shadow: 0 2.5rem 4rem rgba($color-black , .5);
+            z-index: 5;
         }
     }
 
     &:hover &__photo:not(:hover){
         transform: scale(.95);
+    }
+
+    @include device(tab-port){           
+        height: 30rem;   
+        width: 70%;
+    }
+
+    @include device(phone){
+        height: 22rem;  
+        width: 90%;
     }
 }

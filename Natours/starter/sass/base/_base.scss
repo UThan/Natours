@@ -5,8 +5,25 @@
     box-sizing: inherit;
 }
 
+::selection{
+    background-color: green;
+    color: $color-white;
+}
+
 html{
     font-size: 62.5%;
+
+    @include device(big-desk){
+        font-size: 75%;
+    }
+
+    @include device(tab-land){
+        font-size: 56.25%;
+    }
+
+    @include device(tab-port){
+        font-size: 50%;
+    }
 }
 
 body{
@@ -16,4 +33,8 @@ body{
     line-height: 1.7;
     padding: 3rem;    
     color: $color-gray-300;
+
+    @include device(tab-land){
+        padding: 0;  
+    }
 }

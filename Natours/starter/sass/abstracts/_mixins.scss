@@ -11,3 +11,44 @@
     left: 50%;
     transform: translate(-50% , -50%);
 }
+
+/*
+Media Query Manager 
+
+  Device                     Range                In em         1rem     %of16px
+Phone                      0 to 600px            37.5em         8px        50%
+Tablet Portrate            600 to 900px          56.25em        8px        50%
+Tablet Landscape           600px  to 1200px      75em           9px        56.25%
+Normal Desktop             1200px to 1800px      112.5em        10px       62.5%
+Big Desktop                1800px and above                     12px       75%
+
+1em -> 16px
+
+
+*/
+
+@mixin device ($brakepoint){
+    @if $brakepoint == phone {
+        @media only screen and (max-width : 37.5em) {
+            @content;
+        }
+    }
+
+    @if $brakepoint == tab-port {
+        @media only screen and (max-width : 56.25em) {
+            @content;
+        }
+    }
+
+    @if $brakepoint == tab-land {
+        @media only screen and (max-width : 75em) {
+            @content;
+        }
+    }
+
+    @if $brakepoint == big-desk {
+        @media only screen and (min-width : 112.5em) {
+            @content;
+        }
+    }
+}

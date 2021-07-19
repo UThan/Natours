@@ -46,36 +46,52 @@
 
         <main>
             <section class="section-about">
-
                 <div class="text-center mb-8">
                     <h2 class="heading-secondary">
                         Exciting tours for adventurous people
                     </h2>
                 </div>
 
-
                 <div class="row">
                     <div class="col-1-of-2">
-                        <h3 class="heading-tertiary">
-                            You are going to fall in love with nature
-                        </h3>
-                        <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur vero facere mollitia velit. Ipsam vitae ipsa, error, delectus modi, ratione id totam sapiente non at labore! Doloribus dolores totam commodi.
-                        </p>
-                        <h3 class="heading-tertiary">
-                            Live adventure like you have never before
-                        </h3>
-                        <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur vero facere mollitia velit. Ipsam vitae ipsa, error, delectus modi, ratione id totam sapiente non at labore! Doloribus dolores totam commodi.
-                        </p>
+                        <div class="about__text">                            
+                            <h3 class="heading-tertiary">
+                                You are going to fall in love with nature
+                            </h3>
+                            <p class="paragraph">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur vero facere mollitia velit. Ipsam vitae ipsa, error, delectus modi, ratione id totam sapiente non at labore! Doloribus dolores totam commodi.
+                            </p>
+                            <h3 class="heading-tertiary">
+                                Live adventure like you have never before
+                            </h3>
+                            <p class="paragraph">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur vero facere mollitia velit. Ipsam vitae ipsa, error, delectus modi, ratione id totam sapiente non at labore! Doloribus dolores totam commodi.
+                            </p>
 
-                        <a href="#" class="btn--text">Learn More &rarr;</a>
+                            <a href="#" class="btn--text">Learn More &rarr;</a>
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/nat-1.jpg" alt="photo1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2.jpg" alt="photo2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3.jpg" alt="photo3" class="composition__photo composition__photo--p3">
+                            
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 1"
+                                 class="composition__photo composition__photo--p1"
+                                 src="img/nat-1-large.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 2"
+                                 class="composition__photo composition__photo--p2"
+                                 src="img/nat-2-large.jpg">
+
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 3"
+                                 class="composition__photo composition__photo--p3"
+                                 src="img/nat-3-large.jpg">
+
                         </div>
                     </div>
                 </div>
@@ -335,7 +351,10 @@
 
         <div class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+                <picture >
+                    <source media="(max-width: 37.5em)" srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x">
+                    <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo"  srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x">
+                </picture>
             </div>
 
             <div class="row">
